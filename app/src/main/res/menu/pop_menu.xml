@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:iconTint="@color/color_main"
+        android:id="@+id/rating"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:title="Rating Us"
+       />
+    <item
+        android:id="@+id/share"
+        android:iconTint="@color/color_main"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="Share App" />
+
+    <item
+        android:iconTint="@color/color_main"
+
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info_blue_24dp"
+        android:title="Info App"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/quit"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:iconTint="@color/color_main"
+        android:title="Exit app" />
+
+</menu>

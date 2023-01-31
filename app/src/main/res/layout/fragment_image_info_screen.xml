@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <ProgressBar
+        android:id="@+id/progressInfoImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="11dp"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/back_to_home_fragment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:blk_blurRadius="12"
+        app:blk_cornerRadius="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/back_to_home_fragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_left_arrow" />
+
+    </io.alterac.blurkit.BlurLayout>
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/invisibleSetImage"
+        android:layout_width="50dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="25dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:blk_blurRadius="12"
+        app:blk_cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/invisibleSetImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/clear" />
+
+    </io.alterac.blurkit.BlurLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainContainer"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <io.alterac.blurkit.BlurLayout
+            android:id="@+id/home_image_download_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:blk_blurRadius="12"
+            app:blk_cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/setWallpaper">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/home_image_download_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_download" />
+
+        </io.alterac.blurkit.BlurLayout>
+
+        <io.alterac.blurkit.BlurLayout
+            android:id="@+id/setWallpaper"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:blk_blurRadius="12"
+            app:blk_cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/home_image_download_btn"
+            app:layout_constraintRight_toLeftOf="@id/home_image_edit_btn">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/setWallpaper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_share_with" />
+
+        </io.alterac.blurkit.BlurLayout>
+
+        <io.alterac.blurkit.BlurLayout
+            android:id="@+id/home_image_edit_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:blk_blurRadius="12"
+            app:blk_cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/setWallpaper"
+            app:layout_constraintRight_toLeftOf="@id/home_image_info_btn">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/home_image_share_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_share_btn" />
+
+        </io.alterac.blurkit.BlurLayout>
+
+        <io.alterac.blurkit.BlurLayout
+            android:id="@+id/home_image_info_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:blk_blurRadius="12"
+            app:blk_cornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/home_image_edit_btn"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/home_image_info_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_info_btn" />
+
+        </io.alterac.blurkit.BlurLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

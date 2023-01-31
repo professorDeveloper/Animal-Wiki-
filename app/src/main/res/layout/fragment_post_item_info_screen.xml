@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".ui.screen.posts.PostItemInfoScreen"
+    android:layout_height="match_parent"
+>
+
+    <ImageView
+        android:id="@+id/backPostItems"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:elevation="11dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/postAboutImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/get"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postAboutImage">
+
+        <ImageView
+            android:id="@+id/postAboutTextSize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/font_s"
+            app:tint="@color/textc" />
+
+        <ImageView
+            android:id="@+id/postAboutShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="center"
+            android:src="@drawable/share" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/postAboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Atirgul"
+        android:textAllCaps="false"
+        android:textColor="@color/textc"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postAboutImage" />
+
+    <ScrollView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/postAboutDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_dolor_vulputate_duis_velit_accumsan_non_dolor_amet_eleifend_elit_nisl_leo_ac_morbi_feugiat_in_in_elit_mattis_eget_augue_dolor_aliquam_ultrices_eget_bibendum_dis_id_parturient_purus_arcu_congue_tellus_cras_in_ac_elementum_augue_sed_integer_accumsan_suscipit_malesuada_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_dolor_vulputate_duis_velit_accumsan_non_dolor_amet_eleifend_elit_nisl_leo_ac_morbi_feugiat_in_in_elit_mattis_eget_augue_dolor_aliquam_ultrices_eget_bibendum_dis_id_parturient_purus_arcu_congue_tellus_cras_in_ac_elementum_augue_sed_integer_accumsan_suscipit_malesuada_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_dolor_vulputate_duis_velit_accumsan_non_dolor_amet_eleifend_elit_nisl_leo_ac_morbi_feugiat_in_in_elit_mattis_eget_augue_dolor_aliquam_ultrices_eget_bibendum_dis_id_parturient_purus_arcu_congue_tellus_cras_in_ac_elementum_augue_sed_integer_accumsan_suscipit_malesuada"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'kotlin-android-extensions'
+
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.azamovhudstc.animalwiki"
+        minSdk 26
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    def lottieVersion = "3.4.0"//lottieVersion
+    def room_version = "2.4.3"//roomVersion
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.26'
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'com.github.andrefrsousa:SuperBottomSheet:2.0.0'
+    implementation 'com.github.leoncydsilva:MaterialSearchView:1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'//Retrofit2
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'//Retrofit2
+    implementation 'de.hdodenhof:circleimageview:3.1.0'//CircleImageView
+    implementation 'io.github.vicmikhailau:MaskedEditText:4.0.7'//Mask Edittext
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'//FragmentNavigation
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")//Okhttp3
+    implementation 'de.hdodenhof:circleimageview:3.1.0'//CircleImageView
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'//ChipNavigationBar
+    //Lotti
+    implementation "com.airbnb.android:lottie:$lottieVersion"//LottieAnimation
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'//FacebookShimmer
+    implementation("com.tbuonomo:dotsindicator:4.3")//DotsIndicator
+    implementation 'com.github.scottyab:showhidepasswordedittext:0.8'//PasswordEditText
+    implementation 'com.github.pdrozz:pinview:1.0.2'//PinView
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+    implementation 'com.github.st235:expandablebottombar:1.5.1'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+    //room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    //SearchView
+    implementation 'com.github.leoncydsilva:MaterialSearchView:1.0'
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.14.2") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'androidx.annotation:annotation:1.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation("com.github.bumptech.glide:glide:4.14.2@aar") {
+        transitive = true
+    }
+    implementation 'androidx.core:core-splashscreen:1.0.0'
+
+    //DI
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Work Manger
+    def work_version = "2.7.1"
+
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    implementation 'com.github.gabriel-TheCode:AestheticDialogs:1.3.6'
+
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+    implementation 'com.github.Spikeysanju:ZoomRecylerLayout:1.0'
+//    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.26'
+    implementation 'com.ms-square:expandableTextView:0.1.4' //Expendable TextView
+
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+    /**
+     * Room ORM
+     * */
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    //Expendable TextView
+    implementation "androidx.room:room-ktx:$room_version"
+    //Permission
+    implementation 'com.guolindev.permissionx:permissionx:1.7.1'
+    // Image filter
+    implementation 'com.github.mukeshsolanki:photofilter:1.0.2'
+    //paging
+    implementation 'androidx.paging:paging-common-ktx:3.1.1'
+    implementation 'androidx.paging:paging-runtime-ktx:3.1.1'
+    implementation "android.arch.paging:runtime:1.0.1"
+    //Blur kit
+    implementation 'io.alterac.blurkit:blurkit:1.1.1'
+//
+
+}

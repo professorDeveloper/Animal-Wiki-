@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AnimalWiki/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21" />
+        <entry key="..\:/AnimalWiki/app/src/main/res/drawable/bg_try_again.xml" value="0.21" />
+        <entry key="..\:/AnimalWiki/app/src/main/res/layout/fragment_image_info_screen.xml" value="0.3098958333333333" />
+        <entry key="..\:/AnimalWiki/app/src/main/res/layout/get_started_screen.xml" value="0.3098958333333333" />
+        <entry key="..\:/AnimalWiki/app/src/main/res/layout/home_screen.xml" value="0.3098958333333333" />
+        <entry key="..\:/AnimalWiki/app/src/main/res/layout/splash_screen.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

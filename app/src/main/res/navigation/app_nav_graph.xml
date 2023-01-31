@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/getStartedScreen"
+    android:id="@+id/app_nav_graph">
+
+    <fragment
+        android:id="@+id/getStartedScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.start.GetStartedScreen"
+        android:label="get_started_screen"
+        tools:layout="@layout/get_started_screen" >
+        <action
+            android:id="@+id/action_getStartedScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.home.HomeScreen"
+        android:label="home_screen"
+        tools:layout="@layout/home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_postsItemScreen"
+            app:destination="@id/postsItemScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_viewAllPlayListItemsScreen"
+            app:destination="@id/viewAllPlayListItemsScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_imageInfoScreen"
+            app:destination="@id/imageInfoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/postsItemScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.posts.PostsItemScreen"
+        android:label="fragment_posts_item_screen"
+        tools:layout="@layout/fragment_posts_item_screen" >
+        <action
+            android:id="@+id/action_postsItemScreen_to_postItemInfoScreen"
+            app:destination="@id/postItemInfoScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/postItemInfoScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.posts.PostItemInfoScreen"
+        android:label="fragment_post_item_info_screen"
+        tools:layout="@layout/fragment_post_item_info_screen" />
+    <fragment
+        android:id="@+id/viewAllPlayListItemsScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.videos.ViewAllPlayListItemsScreen"
+        android:label="ViewAllPlayListItemsScreen" >
+        <action
+            android:id="@+id/action_viewAllPlayListItemsScreen_to_videosAboutScreen"
+            app:destination="@id/videosAboutScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/videosAboutScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.videos.VideosAboutScreen"
+        android:label="VideosAboutScreen" />
+    <fragment
+        android:id="@+id/imageInfoScreen"
+        android:name="com.azamovhudstc.animalwiki.ui.screen.image.ImageInfoScreen"
+        android:label="fragment_image_info_screen"
+        tools:layout="@layout/fragment_image_info_screen" />
+</navigation>
